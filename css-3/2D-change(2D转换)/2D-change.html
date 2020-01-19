@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D-change(2D转换)</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            border:1px solid black;
+            /*translate()  将图形向东南方向移动*/
+            transform:translate(50px,50px);
+            /*rotate()  将图形旋转(正值为顺时针，负值为逆时针旋转)*/
+            transform:rotate(30deg);
+            /*scale() 将图形放大或缩小 (宽，高)*/
+            transform: scale(1,1.5);
+            /*skew()  向X轴或Y轴的倾斜角度*/
+            transform:skew(60deg,0deg);
+            /*matrix() 2D方法合并 (参数：旋转，缩放，移动（平移）和倾斜)*/
+            transform:matrix(0.866,0.5,-0.5,0.866,0,0);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

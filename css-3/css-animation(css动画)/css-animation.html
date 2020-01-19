@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css-animation(css动画)</title>
+    <style>
+        /*旋转*/
+        div
+        {
+            width:100px;
+            height:100px;
+            position:relative;
+            border: 1px solid gray;
+            transition: width 1s;
+            animation: fly 4s;
+        }
+        @keyframes fly
+        {
+            0%   {background:red; }
+            25%  {background:yellow; transform:rotate(30deg);}
+            50%  {background:blue; transform:translate(300px,0px);}
+            75%  {background:green; transform:rotate(-180deg);}
+            100%  {background:red; transform:rotate(-180deg);}
+        }
+    </style>
+</head>
+<body>
+    <div>哈哈哈哈哈哈</div>
+</body>
+</html>
